@@ -5,11 +5,6 @@ import Nav from "./components/Nav";
 import NavMenu from "./components/NavMenu";
 import { useState } from "react";
 
-export const metadata = {
-  title: "Juno Wine Garden",
-  description: "Juno description",
-};
-
 export default function RootLayout({
   children,
 }: {

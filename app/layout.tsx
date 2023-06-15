@@ -1,7 +1,9 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
+"use client";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import Nav from "./components/Nav";
+import NavMenu from "./components/NavMenu";
+import { useState } from "react";
 
 export const metadata = {
   title: "Juno Wine Garden",
@@ -13,9 +15,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [isOpen, setOpen] = useState(false);
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="">
+        <Nav isOpen={isOpen} setOpen={setOpen}></Nav>
+        <NavMenu isOpen={isOpen}></NavMenu>
+        {children}
+      </body>
     </html>
   );
 }

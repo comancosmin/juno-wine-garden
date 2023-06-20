@@ -1,21 +1,87 @@
 import React from "react";
 import Link from "next/link";
+import { motion as m } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.7,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 function NavMenu({ isOpen }) {
   return (
     <div className={`menu ${isOpen ? "active-menu" : ""}`}>
-      <div className="flex justify-center pt-4 lg:pt-12">
-        <ul className="flex flex-col gap-4">
-          <Link href={"/"} onClick={() => setOpen(!isOpen)}>
-            <li>Home</li>
+      <div className="flex justify-center pt-4 lg:pt-12 px-4 text-center text-juno-primary lg:text-xl">
+        <m.ul
+          className="flex flex-col gap-4 pr-6"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          <Link
+            className="hover:font-bold"
+            href={"/"}
+            onClick={() => setOpen(!isOpen)}
+          >
+            <m.li variants={item}>Home</m.li>
           </Link>
-          <Link href={"/about"} onClick={() => setOpen(!isOpen)}>
-            <li>About</li>
+          <Link
+            className="hover:font-bold"
+            href={"/the-garden"}
+            onClick={() => setOpen(!isOpen)}
+          >
+            <m.li variants={item}>The Garden</m.li>
           </Link>
-          <Link href={"/menu"} onClick={() => setOpen(!isOpen)}>
-            <li>Menu</li>
+          <Link
+            className="hover:font-bold"
+            href={"/menu"}
+            onClick={() => setOpen(!isOpen)}
+          >
+            <m.li variants={item}>Menu</m.li>
           </Link>
-        </ul>
+          <Link
+            className="hover:font-bold"
+            href={"/wineries"}
+            onClick={() => setOpen(!isOpen)}
+          >
+            <m.li variants={item}>Wineries</m.li>
+          </Link>
+          <Link
+            className="hover:font-bold"
+            href={"/events"}
+            onClick={() => setOpen(!isOpen)}
+          >
+            <m.li variants={item}>Events</m.li>
+          </Link>
+          <Link
+            className="hover:font-bold"
+            href={"/photos"}
+            onClick={() => setOpen(!isOpen)}
+          >
+            <m.li variants={item}>Photos</m.li>
+          </Link>
+          <Link
+            className="hover:font-bold"
+            href={"/contact"}
+            onClick={() => setOpen(!isOpen)}
+          >
+            <m.li variants={item}>Contact</m.li>
+          </Link>
+        </m.ul>
       </div>
     </div>
   );

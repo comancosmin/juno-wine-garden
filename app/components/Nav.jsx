@@ -11,7 +11,12 @@ const Nav = ({ isOpen, setOpen }) => {
     <div className="h-24 shadow">
       <div className="flex flex-row justify-between lg:h-24 px-4 pt-6 lg:px-20 lg:pt-0">
         <div className="lg:pt-6">
-          <Hamburger toggled={isOpen} toggle={setOpen} color="#6F6F6F" />
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            color="#6F6F6F"
+            size={24}
+          />
         </div>
         <Link href={"/"}>
           <Image
@@ -24,17 +29,20 @@ const Nav = ({ isOpen, setOpen }) => {
           <Link href="https://www.facebook.com/junobrasov/" target="_blank">
             <AiFillFacebook
               color="#6f6f6f"
-              className="lg:w-6 lg:h-6"
+              className="lg:w-6 lg:h-6 hover:opacity-70"
             ></AiFillFacebook>
           </Link>
           <Link href="https://www.instagram.com/junowinebar/" target="_blank">
             <AiFillInstagram
               color="#6f6f6f"
-              className="lg:w-6 lg:h-6"
+              className="lg:w-6 lg:h-6 hover:opacity-70"
             ></AiFillInstagram>
           </Link>
           <Link href="https://www.tiktok.com/@junowinegarden" target="_blank">
-            <FaTiktok color="#6f6f6f" className="lg:w-6 lg:h-6"></FaTiktok>
+            <FaTiktok
+              color="#6f6f6f"
+              className="lg:w-6 lg:h-6 hover:opacity-70"
+            ></FaTiktok>
           </Link>
         </div>
       </div>

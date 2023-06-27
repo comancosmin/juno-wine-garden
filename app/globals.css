@@ -23,3 +23,30 @@
 .hamburger-react {
   z-index: 9;
 }
+
+.container-table {
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr 0.6fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "container-image container-title container-price";
+  padding: 10px;
+}
+
+.container-image {
+  grid-area: container-image;
+}
+
+.container-title {
+  grid-area: container-title;
+}
+
+.container-price {
+  grid-area: container-price;
+}
+
+.menu,
+.active-menu {
+  overflow: hidden;
+}

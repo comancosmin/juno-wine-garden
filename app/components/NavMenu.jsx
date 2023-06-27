@@ -33,49 +33,49 @@ function NavMenu({ isOpen }) {
           animate="visible"
         >
           <Link
-            className="hover:font-bold"
+            className="hover:opacity-70"
             href={"/"}
             onClick={() => setOpen(!isOpen)}
           >
             <m.li variants={item}>Home</m.li>
           </Link>
           <Link
-            className="hover:font-bold"
+            className="hover:opacity-70"
             href={"/the-garden"}
             onClick={() => setOpen(!isOpen)}
           >
             <m.li variants={item}>The Garden</m.li>
           </Link>
           <Link
-            className="hover:font-bold"
+            className="hover:opacity-70"
             href={"/menu"}
             onClick={() => setOpen(!isOpen)}
           >
             <m.li variants={item}>Menu</m.li>
           </Link>
           <Link
-            className="hover:font-bold"
+            className="hover:opacity-70"
             href={"/wineries"}
             onClick={() => setOpen(!isOpen)}
           >
             <m.li variants={item}>Wineries</m.li>
           </Link>
           <Link
-            className="hover:font-bold"
+            className="hover:opacity-70"
             href={"/events"}
             onClick={() => setOpen(!isOpen)}
           >
             <m.li variants={item}>Events</m.li>
           </Link>
           <Link
-            className="hover:font-bold"
+            className="hover:opacity-70"
             href={"/photos"}
             onClick={() => setOpen(!isOpen)}
           >
             <m.li variants={item}>Photos</m.li>
           </Link>
           <Link
-            className="hover:font-bold"
+            className="hover:opacity-70"
             href={"/contact"}
             onClick={() => setOpen(!isOpen)}
           >

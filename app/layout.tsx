@@ -41,7 +41,9 @@ export default function RootLayout({
   const [isOpen, setOpen] = useState(false);
   return (
     <html lang="en">
-      <body className={`${juno.variable} ${poppins.variable} font-sans`}>
+      <body
+        className={`${juno.variable} ${poppins.variable} font-sans overflow-x-hidden`}
+      >
         <Nav isOpen={isOpen} setOpen={setOpen}></Nav>
         <NavMenu isOpen={isOpen}></NavMenu>
         {children}

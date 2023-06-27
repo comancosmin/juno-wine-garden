@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
     "@next/font": "^13.4.6",
     "@react-icons/all-files": "^4.1.0",
     "@types/node": "20.2.0",
@@ -18,10 +19,10 @@
     "eslint-config-next": "13.4.2",
     "framer-motion": "^10.12.16",
     "hamburger-react": "^2.5.0",
-    "next": "13.4.2",
+    "next": "^13.4.8-canary.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.9.0",
+    "react-icons": "^4.10.1",
     "typescript": "5.0.4"
   },
   "devDependencies": {

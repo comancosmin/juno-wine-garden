@@ -1,6 +1,7 @@
 import React from "react";
 import wineList from "../../public/utils/wineList";
 import Image from "next/image";
+import IconWinery from "./IconWinery";
 
 function WineMenu() {
   return (
@@ -14,21 +15,24 @@ function WineMenu() {
               </div>
             )}
             {item.winery && (
-              <h2 className="text-juno-primary text-xl py-3 lg:py-1 font-serif uppercase pl-4">
-                {item.winery}
-              </h2>
+              <div className="text-juno-primary text-xl lg:py-1 font-serif uppercase pl-4 pb-10 pt-5">
+                <div className="container ">
+                  <IconWinery />
+                  <div className="absolute">Crama - {item.winery}</div>
+                </div>
+              </div>
             )}
           </div>
           <div className="container-table">
             {item.image && item.title && (
               <>
-                <div className="container-image w-full aspect-square object-cover">
+                <div className="container-image">
                   <Image
                     src={item.image}
                     alt={item.title}
                     width={200}
                     height={200}
-                    className="w-40 h-60 object-cover"
+                    className="w-60 h-72 object-cover"
                   />
                 </div>
                 <div className="container-title">

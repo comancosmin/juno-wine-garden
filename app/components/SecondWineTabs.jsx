@@ -9,15 +9,15 @@ function SecondWineTabs() {
   return (
     <>
       <Tab.Group>
-        <Tab.List className="flex gap-10 py-4 lg:text-xl bg-white bottom-10 fixed w-screen overflow-scroll px-10 whitespace-nowrap">
+        <Tab.List className="flex gap-10 py-4 lg:text-xl  bottom-10 fixed w-screen overflow-scroll px-10 whitespace-nowrap bg-white">
           <Tab as={Fragment}>
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none"
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none font-semibold px-2 text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none opacity-60 px-2 text-sm"
                 }
               >
                 Dealu Mare
@@ -30,8 +30,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none"
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2  text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 opacity-60 px-2 text-sm"
                 }
               >
                 Moldova
@@ -45,8 +45,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none "
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 opacity-60 px-2 text-sm"
                 }
               >
                 Dobrogea
@@ -59,8 +59,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none "
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 px-3 font-semibold text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 px-3 opacity-60 text-sm"
                 }
               >
                 Olt
@@ -73,8 +73,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none "
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 opacity-60 px-2 text-sm"
                 }
               >
                 Republica Moldova
@@ -87,8 +87,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none "
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 opacity-60 px-2 text-sm"
                 }
               >
                 Transilvania
@@ -101,8 +101,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none "
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 opacity-60 px-2 text-sm"
                 }
               >
                 Banat
@@ -115,8 +115,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none "
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 opacity-60 px-2 text-sm"
                 }
               >
                 Ferdinant & Moet
@@ -129,8 +129,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none "
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 opacity-60 px-2 text-sm"
                 }
               >
                 Spumante
@@ -143,8 +143,8 @@ function SecondWineTabs() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none"
-                    : "text-juno-primary flex focus:outline-none "
+                    ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
+                    : "text-juno-primary rounded border border-juno-primary focus:outline-none p-1 opacity-60 px-2 text-sm"
                 }
               >
                 Importuri

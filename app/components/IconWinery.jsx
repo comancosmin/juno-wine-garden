@@ -10,7 +10,7 @@ function IconWinery() {
         width={200}
         height={200}
         alt="icon"
-        className="absolute -ml-4"
+        className="absolute -ml-4 -z-50"
       />
     </>
   );

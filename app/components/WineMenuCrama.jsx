@@ -1,12 +1,12 @@
 import React from "react";
-import wineList from "../../public/utils/wineList";
+import wineListCrama from "../../public/utils/wineListCrama";
 import Image from "next/image";
 import IconWinery from "./IconWinery";
 
 function WineMenu() {
   return (
     <div className="px-4">
-      {wineList.map((item, index) => (
+      {wineListCrama.map((item, index) => (
         <div
           key={index}
           className=" text-juno-primary flex lg:flex-col lg:px-36"

@@ -27,7 +27,6 @@ import crama3_5 from "../images/crama-aristitei/cupaj-rosu.jpg";
 import crama3_6 from "../images/crama-aristitei/merlot.jpg";
 const wineList = [
   {
-    region: "Dealu Mare",
     winery: "iooo chipuri",
   },
   {
@@ -138,6 +137,9 @@ const wineList = [
     title: "Vizionar Merlot Reserva",
     description: "sec, 750ml, 14.9% alc.",
     price: 148,
+  },
+  {
+    winery: `|`,
   },
 ];
 

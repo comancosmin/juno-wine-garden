@@ -6,25 +6,22 @@ import { Fragment } from "react";
 import { LiaCocktailSolid } from "react-icons/lia";
 import { IoIosWine } from "react-icons/io";
 import { IoRestaurantOutline } from "react-icons/io5";
+import SecondWineTabs from "../components/SecondWineTabs";
 
 function Menu2() {
   return (
     <>
       <title>Juno | Menu</title>
-      <Tab.Group
-        onChange={(index) => {
-          console.log("Changed selected tab to:", index);
-        }}
-      >
-        <Tab.List className="flex justify-center align-middle gap-10 py-6 lg:text-xl bg-gray-100">
+      <Tab.Group>
+        <Tab.List className="flex justify-center align-middle gap-10 py-4 lg:text-xl bg-white bottom-0 fixed w-screen">
           <Tab as={Fragment}>
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex"
-                    : "text-juno-primary flex"
+                    ? " text-juno-title font-semibold flex focus:outline-none border-b-2 border-juno-title px-2"
+                    : "text-juno-primary flex focus:outline-none"
                 }
               >
                 <LiaCocktailSolid className="mt-0.5 mr-1" /> Bar
@@ -37,8 +34,8 @@ function Menu2() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex"
-                    : "text-juno-primary flex"
+                    ? " text-juno-title font-semibold flex focus:outline-none border-b-2 border-juno-title px-2"
+                    : "text-juno-primary flex focus:outline-none"
                 }
               >
                 <IoIosWine className="mt-0.5 mr-1" /> Wine
@@ -52,8 +49,8 @@ function Menu2() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex"
-                    : "text-juno-primary flex"
+                    ? " text-juno-title font-semibold flex focus:outline-none border-b-2 border-juno-title px-2"
+                    : "text-juno-primary flex focus:outline-none "
                 }
               >
                 <IoRestaurantOutline className="mt-0.5 mr-1 pt-0.5" /> Food
@@ -64,7 +61,7 @@ function Menu2() {
         <Tab.Panels>
           <Tab.Panel></Tab.Panel>
           <Tab.Panel>
-            <WineMenu className="overflow-scroll" />
+            <SecondWineTabs />
           </Tab.Panel>
           <Tab.Panel></Tab.Panel>
         </Tab.Panels>

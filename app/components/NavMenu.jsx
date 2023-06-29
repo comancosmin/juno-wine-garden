@@ -24,7 +24,7 @@ const item = {
 
 function NavMenu({ isOpen }) {
   return (
-    <div className={`menu z-20 ${isOpen ? "active-menu" : ""}`}>
+    <div className={`menu z-30 ${isOpen ? "active-menu" : ""}`}>
       <div className="flex justify-center pt-4 lg:pt-12 px-4 text-center text-juno-primary lg:text-xl">
         <m.ul
           className="flex flex-col gap-4 pr-6"

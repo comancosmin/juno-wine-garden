@@ -50,3 +50,15 @@
 .active-menu {
   overflow: hidden;
 }
+
+.scrollbar-css {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-css::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.bottom-test {
+  bottom: 50px;
+}

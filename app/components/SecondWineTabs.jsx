@@ -4,12 +4,14 @@ import WineMenuCrama from "../components/WineMenuCrama";
 import WineMenu from "../components/WineMenu";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
+import Arrows from "./Arrows";
 
 function SecondWineTabs() {
   return (
     <>
       <Tab.Group>
-        <Tab.List className="flex gap-10 py-4 lg:text-xl  bottom-10 fixed w-screen overflow-scroll px-10 whitespace-nowrap bg-white">
+        <Arrows />
+        <Tab.List className="flex gap-7 py-4 lg:text-xl  bottom-11 fixed w-screen  overflow-scroll px-10 whitespace-nowrap z-20 scrollbar-css">
           <Tab as={Fragment}>
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */

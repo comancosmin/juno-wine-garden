@@ -1,7 +1,15 @@
 "use client";
 import React from "react";
-import WineMenuCrama from "../components/WineMenuCrama";
-import WineMenu from "../components/WineMenu";
+import Moldova from "./regiuni-vinuri/regiunea_Moldova";
+import DealuMare from "./regiuni-vinuri/regiunea_Dealu-Mare";
+import Spumante from "./regiuni-vinuri/regiunea_Spumante";
+import Importuri from "./regiuni-vinuri/regiunea_Importuri";
+import FerdinandMoet from "./regiuni-vinuri/regiunea_Ferdinand-Moet";
+import Olt from "./regiuni-vinuri/regiunea_Olt";
+import Banat from "./regiuni-vinuri/regiunea_Banat";
+import Transilvania from "./regiuni-vinuri/regiunea_Transilvania";
+import Dobrogea from "./regiuni-vinuri/regiunea_Dobrogea";
+import RepublicaMoldova from "./regiuni-vinuri/regiunea_Republica-Moldova";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 import Arrows from "./Arrows";
@@ -156,11 +164,34 @@ function SecondWineTabs() {
         </Tab.List>
         <Tab.Panels>
           <Tab.Panel>
-            <WineMenu />
+            <DealuMare />
           </Tab.Panel>
-          <Tab.Panel></Tab.Panel>
           <Tab.Panel>
-            <WineMenuCrama />
+            <Moldova />
+          </Tab.Panel>
+          <Tab.Panel>
+            <Dobrogea />
+          </Tab.Panel>
+          <Tab.Panel>
+            <Olt />
+          </Tab.Panel>
+          <Tab.Panel>
+            <RepublicaMoldova />
+          </Tab.Panel>
+          <Tab.Panel>
+            <Transilvania />
+          </Tab.Panel>
+          <Tab.Panel>
+            <Banat />
+          </Tab.Panel>
+          <Tab.Panel>
+            <FerdinandMoet />
+          </Tab.Panel>
+          <Tab.Panel>
+            <Spumante />
+          </Tab.Panel>
+          <Tab.Panel>
+            <Importuri />
           </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>

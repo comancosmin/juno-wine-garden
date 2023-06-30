@@ -1,9 +1,9 @@
 import React from "react";
-import wineList from "../../public/utils/wineList";
+import wineList from "../../../public/utils/regiunea_Transilvania";
 import Image from "next/image";
-import IconWinery from "./IconWinery";
+import IconWinery from "../IconWinery";
 
-function WineMenu() {
+function Dobrogea() {
   return (
     <div className="px-4">
       {wineList.map((item, index) => (
@@ -53,4 +53,4 @@ function WineMenu() {
   );
 }
 
-export default WineMenu;
+export default Dobrogea;

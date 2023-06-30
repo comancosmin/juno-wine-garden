@@ -1,12 +1,12 @@
 import React from "react";
-import wineListCrama from "../../public/utils/wineListCrama";
+import wineList from "../../../public/utils/regiunea_Dealu-Mare";
 import Image from "next/image";
-import IconWinery from "./IconWinery";
+import IconWinery from "../IconWinery";
 
-function WineMenu() {
+function DealuMare() {
   return (
     <div className="px-4">
-      {wineListCrama.map((item, index) => (
+      {wineList.map((item, index) => (
         <div
           key={index}
           className=" text-juno-primary flex lg:flex-col lg:px-36"
@@ -53,4 +53,4 @@ function WineMenu() {
   );
 }
 
-export default WineMenu;
+export default DealuMare;

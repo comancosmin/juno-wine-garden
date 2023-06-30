@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import WineMenu from "../components/WineMenu";
+import WineMenu from "../components/regiuni-vinuri/regiunea_Dealu-Mare";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 import { LiaCocktailSolid } from "react-icons/lia";
@@ -36,7 +36,7 @@ function Menu2() {
               <button
                 className={
                   selected
-                    ? " text-juno-title font-semibold flex focus:outline-none px-2"
+                    ? "text-juno-title font-semibold flex focus:outline-none px-2"
                     : "text-juno-primary flex focus:outline-none opacity-80"
                 }
               >

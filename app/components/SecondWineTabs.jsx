@@ -13,8 +13,13 @@ import RepublicaMoldova from "./regiuni-vinuri/regiunea_Republica-Moldova";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 import Arrows from "./Arrows";
+import { useState, useEffect } from "react";
 
 function SecondWineTabs() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <Tab.Group>
@@ -24,6 +29,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none font-semibold px-2 text-sm opacity-80"
@@ -38,6 +44,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2  text-sm opacity-80"
@@ -53,6 +60,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
@@ -67,6 +75,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 px-3 font-semibold text-sm opacity-80"
@@ -81,6 +90,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
@@ -95,6 +105,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
@@ -109,6 +120,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
@@ -123,6 +135,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
@@ -137,6 +150,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"
@@ -151,6 +165,7 @@ function SecondWineTabs() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title  rounded border-2 border-juno-title focus:outline-none p-1 font-semibold px-2 text-sm opacity-80"

@@ -25,6 +25,27 @@ import crama3_3 from "../images/crama-aristitei/domeniul-aristitei-vizionar-rose
 import crama3_4 from "../images/crama-aristitei/Vizionar_Feteasca-Neagra.jpg";
 import crama3_5 from "../images/crama-aristitei/cupaj-rosu.jpg";
 import crama3_6 from "../images/crama-aristitei/merlot.jpg";
+{
+  //! CRAMA Gramofon
+}
+import crama4_1 from "../images/crama-gramofon/gw-chardonnay.png";
+import crama4_2 from "../images/crama-gramofon/gramofon-virtuoz-feteasca-neagra-vin-rosu-dulce-075l.webp";
+import crama4_3 from "../images/crama-gramofon/feteasca-regala.png";
+import crama4_4 from "../images/crama-gramofon/sonorum-rose.png";
+import crama4_5 from "../images/crama-gramofon/Sonorum-Feteasca-Neagra.png";
+import crama4_6 from "../images/crama-gramofon/gramofon-wine-feteasca-neagra-075l1.jpg";
+{
+  //! CRAMA Budureasca
+}
+import crama5_1 from "../images/crama-budureasca/budureasca-premium-fume.jpg";
+import crama5_2 from "../images/crama-budureasca/budureasca-sauvignon-sauvignon.jpg";
+import crama5_3 from "../images/crama-budureasca/budureasca-premium-feteasca-neagra.jpg";
+import crama5_4 from "../images/crama-budureasca/budureasca-premium-rose.jpg";
+import crama5_5 from "../images/crama-budureasca/budureasca-bristena-tamaioasa-romaneasca.jpg";
+import crama5_6 from "../images/crama-budureasca/budureasca-noble-five.jpg";
+import crama5_7 from "../images/crama-budureasca/budureasca-shine-rose.jpg";
+import crama5_8 from "../images/crama-budureasca/budureasca-shine-alb.jpg";
+
 const wineList = [
   {
     winery: "iooo chipuri",
@@ -137,6 +158,96 @@ const wineList = [
     title: "Vizionar Merlot Reserva",
     description: "sec, 750ml, 14.9% alc.",
     price: 148,
+  },
+  {
+    winery: "Gramofon",
+  },
+  {
+    image: crama4_1,
+    title: "Gramofon Wine Chardonnay",
+    description: "sec, 750ml",
+    price: 78,
+  },
+  {
+    image: crama4_2,
+    title: "Virtuos Fetească Neagră",
+    description: "dulce, 750ml, 15.1% alc.",
+    price: 78,
+  },
+  {
+    image: crama4_3,
+    title: "Gramofon Wine Fetească Regală",
+    description: "sec, 750ml",
+    price: 78,
+  },
+  {
+    image: crama4_4,
+    title: "Sonorum Rose Merlot & Fetească Neagră",
+    description: "Limited Edition 7000 sticle, sec, 1L",
+    price: 145,
+  },
+  {
+    image: crama4_5,
+    title: "Sonorum Fetească Neagră Barricat",
+    description: "Limited Edition 5000 sticle, sec, 750ml, 15.2% alc.",
+    price: 218,
+  },
+  {
+    image: crama4_6,
+    title: "Gramofon Wine Fetească Neagră",
+    description: "demisec, 750ml, 15.7% alc.",
+    price: 148,
+  },
+  {
+    winery: "Budureasca",
+  },
+  {
+    image: crama5_1,
+    title: "Premium Sauvignon Blanc Fume",
+    description: "sec, 750ml",
+    price: 98,
+  },
+  {
+    image: crama5_2,
+    title: "Sauvignon & Sauvignon",
+    description: "(Sauvignon Blanc 70% & Cabernet Sauvignon 30%) sec, 750ml",
+    price: 98,
+  },
+  {
+    image: crama5_3,
+    title: "Premium Fetească Neagră (Maidens)",
+    description: "sec, 750ml",
+    price: 98,
+  },
+  {
+    image: crama5_4,
+    title: "Premium Rose",
+    description: "sec, 750ml",
+    price: 98,
+  },
+  {
+    image: crama5_5,
+    title: "Bristena Tămâioasă Românească",
+    description: "demidulce, 750ml",
+    price: 78,
+  },
+  {
+    image: crama5_6,
+    title: "Noble Five",
+    description: "sec, 750ml, 14.5% alc.",
+    price: 128,
+  },
+  {
+    image: crama5_7,
+    title: "Shine Rose Spumant",
+    description: "dry, 750ml",
+    price: 98,
+  },
+  {
+    image: crama5_8,
+    title: "Shine Alb Spumant",
+    description: "brut, 750ml",
+    price: 98,
   },
   {
     winery: `|`,

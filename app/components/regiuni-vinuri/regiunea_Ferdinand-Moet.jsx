@@ -16,7 +16,7 @@ function Dobrogea() {
               <div className="text-juno-primary text-xl font-serif uppercase pl-4 py-5 lg:py-10">
                 <div className="container py-6">
                   <IconWinery />
-                  <div className="absolute -z-10">Crama - {item.winery}</div>
+                  <div className="absolute -z-10">{item.winery}</div>
                 </div>
               </div>
             )}
@@ -41,7 +41,9 @@ function Dobrogea() {
                 </div>
                 <div className="container-price">
                   {item.price && (
-                    <p className="text-black pl-2">{item.price} ron</p>
+                    <p className="text-black pl-2 whitespace-nowrap">
+                      {item.price} ron
+                    </p>
                   )}{" "}
                 </div>
               </>

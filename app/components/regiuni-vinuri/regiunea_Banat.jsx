@@ -41,7 +41,9 @@ function Dobrogea() {
                 </div>
                 <div className="container-price">
                   {item.price && (
-                    <p className="text-black pl-2">{item.price} ron</p>
+                    <p className="text-black pl-2 whitespace-nowrap">
+                      {item.price} ron
+                    </p>
                   )}{" "}
                 </div>
               </>

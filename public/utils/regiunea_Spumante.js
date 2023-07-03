@@ -2,9 +2,9 @@
   //! CRAMA Spumante
 }
 import crama1_1 from "../images/crama-spumante/piera-1899-spumante-millesimato-extra-dry-solo-202.webp";
-import crama1_2 from "../images/crama-spumante/vino-millesimato-extra-dry-carati-piera-martellozzo-075l-.jpg";
+import crama1_2 from "../images/crama-spumante/Ribolla_Gialla-scaled.png";
 import crama1_3 from "../images/crama-spumante/PROSECCO_SPUMANTE-scaled.jpg";
-import crama1_4 from "../images/crama-spumante/Ribolla_Gialla-scaled.jpg";
+import crama1_4 from "../images/crama-spumante/vino-millesimato-extra-dry-carati-piera-martellozzo-075l-.jpg";
 import crama1_5 from "../images/crama-spumante/PATRIARCA-PROSECCO-shop.png";
 import crama1_6 from "../images/crama-spumante/BQQw4hyMTsO1U_m5WU_2ZA_pb_x960.png";
 import crama1_7 from "../images/crama-spumante/champagne-legras-haas-blanc-de-blancs-brut_550-394.jpg";

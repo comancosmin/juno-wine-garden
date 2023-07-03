@@ -1,15 +1,16 @@
 "use client";
 import React from "react";
-import WineMenu from "../components/regiuni-vinuri/regiunea_Dealu-Mare";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 import { LiaCocktailSolid } from "react-icons/lia";
 import { IoIosWine } from "react-icons/io";
 import { IoRestaurantOutline } from "react-icons/io5";
 import SecondWineTabs from "../components/SecondWineTabs";
+import Food from "../components/Food";
 import IconMenu from "../components/IconMenu";
+import CardOnly from "../components/CardOnly";
 
-function Menu2() {
+function Menu() {
   return (
     <>
       <title>Juno | Menu</title>
@@ -65,11 +66,14 @@ function Menu2() {
           <Tab.Panel>
             <SecondWineTabs />
           </Tab.Panel>
-          <Tab.Panel></Tab.Panel>
+          <Tab.Panel>
+            <Food />
+          </Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
+      <CardOnly />
     </>
   );
 }
 
-export default Menu2;
+export default Menu;

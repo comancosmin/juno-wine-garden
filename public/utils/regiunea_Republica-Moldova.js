@@ -29,7 +29,7 @@ import crama3_6 from "../images/crama-vartely/inspiro-rosu.jpg";
 import crama3_7 from "../images/crama-vartely/chateau-vartely-taraboste-tribut-cabernet-sauvignon.jpg";
 import crama3_8 from "../images/crama-vartely/saperavi.jpg";
 import crama3_9 from "../images/crama-vartely/chateau-vartely-chateau-vartely-brut-alb.jpg";
-import crama3_10 from "../images/crama-vartely/Chateau-Vartely-Spumant-Brut-510x510.jpg";
+import crama3_10 from "../images/crama-vartely/inspiro-spumant-alb.jpg";
 import crama3_11 from "../images/crama-vartely/spumant-rose.jpg";
 const wineList = [
   {

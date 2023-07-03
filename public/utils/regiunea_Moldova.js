@@ -303,7 +303,6 @@ const wineList = [
     description: "brut, 750ml",
     price: 138,
   },
-
   {
     winery: `|`,
   },

@@ -6,11 +6,15 @@ import { LiaCocktailSolid } from "react-icons/lia";
 import { IoIosWine } from "react-icons/io";
 import { IoRestaurantOutline } from "react-icons/io5";
 import SecondWineTabs from "../components/SecondWineTabs";
+import SecondBarTabs from "../components/SecondBarTabs";
 import Food from "../components/Food";
 import IconMenu from "../components/IconMenu";
 import CardOnly from "../components/CardOnly";
 
 function Menu() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <title>Juno | Menu</title>
@@ -21,6 +25,7 @@ function Menu() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title font-semibold flex focus:outline-none px-2"
@@ -35,6 +40,7 @@ function Menu() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? "text-juno-title font-semibold flex focus:outline-none px-2"
@@ -50,6 +56,7 @@ function Menu() {
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */
               <button
+                onClick={scrollToTop}
                 className={
                   selected
                     ? " text-juno-title font-semibold flex focus:outline-none px-2"
@@ -62,7 +69,9 @@ function Menu() {
           </Tab>
         </Tab.List>
         <Tab.Panels>
-          <Tab.Panel></Tab.Panel>
+          <Tab.Panel>
+            <SecondBarTabs />
+          </Tab.Panel>
           <Tab.Panel>
             <SecondWineTabs />
           </Tab.Panel>

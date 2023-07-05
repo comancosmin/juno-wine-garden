@@ -10,7 +10,7 @@ function IconMenu() {
         width={1000}
         height={1000}
         alt="menu-background"
-        className="fixed -z-10 -bottom-56"
+        className="fixed -z-10 -bottom-56 lg:w-96 lg:-bottom-56"
       />
     </>
   );

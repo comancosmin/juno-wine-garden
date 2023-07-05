@@ -1,5 +1,5 @@
 import React from "react";
-import wineList from "../../../public/utils/regiunea_Moldova";
+import wineList from "../../../public/utils/wine-data/regiunea_Moldova";
 import Image from "next/image";
 import IconWinery from "../IconWinery";
 
@@ -16,7 +16,9 @@ function Moldova() {
               <div className="text-juno-primary text-xl font-serif uppercase pl-4 py-5 lg:py-10">
                 <div className="container py-6">
                   <IconWinery />
-                  <div className="absolute -z-10">Crama - {item.winery}</div>
+                  <div className="absolute -z-10 lg:text-2xl">
+                    Crama - {item.winery}
+                  </div>
                 </div>
               </div>
             )}
@@ -34,14 +36,16 @@ function Moldova() {
                   />
                 </div>
                 <div className="container-title">
-                  <h1>{item.title}</h1>
+                  <h1 className="lg:text-2xl">{item.title}</h1>
                   {item.description && (
-                    <p className="italic text-xs">{item.description}</p>
+                    <p className="italic text-xs lg:text-lg">
+                      {item.description}
+                    </p>
                   )}
                 </div>
                 <div className="container-price">
                   {item.price && (
-                    <p className="text-black pl-2 whitespace-nowrap">
+                    <p className="text-black pl-2 whitespace-nowrap lg:text-2xl">
                       {item.price} ron
                     </p>
                   )}{" "}

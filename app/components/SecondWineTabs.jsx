@@ -13,7 +13,6 @@ import RepublicaMoldova from "./regiuni-vinuri/regiunea_Republica-Moldova";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 import Arrows from "./Arrows";
-import { useState, useEffect } from "react";
 
 function SecondWineTabs() {
   const scrollToTop = () => {
@@ -24,7 +23,7 @@ function SecondWineTabs() {
     <>
       <Tab.Group>
         <Arrows />
-        <Tab.List className="flex gap-7 py-4 lg:text-xl  bottom-11 fixed w-screen  overflow-scroll px-10 whitespace-nowrap z-20 scrollbar-css">
+        <Tab.List className="flex gap-7 py-4 lg:text-xl  bottom-11 fixed w-screen  overflow-scroll px-10 whitespace-nowrap z-20 scrollbar-css lg:left-72">
           <Tab as={Fragment}>
             {({ selected }) => (
               /* Use the `selected` state to conditionally style the selected tab. */

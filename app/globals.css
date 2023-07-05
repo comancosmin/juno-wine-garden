@@ -33,6 +33,24 @@
   grid-template-areas: "container-image container-title container-price";
   padding: 10px;
 }
+.container-table-bar {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 0.6fr;
+  grid-template-rows: 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "container-image container-title container-price";
+  padding: 10px;
+}
+.container-table-spirits {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "container-title container-price";
+  padding: 10px;
+}
 
 .container-image {
   grid-area: container-image;

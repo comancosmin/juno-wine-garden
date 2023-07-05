@@ -1,5 +1,5 @@
 import React from "react";
-import foodList from "../../public/utils/food";
+import foodList from "../../public/utils/food-data/food";
 import Image from "next/image";
 import IconWinery from "../components/IconWinery";
 import { Disclosure } from "@headlessui/react";
